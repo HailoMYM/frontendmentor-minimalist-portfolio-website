@@ -41,3 +41,7 @@ body {
   font-size: 1.6rem;
   line-height: 3rem;
 }
+// https://stackoverflow.com/questions/31444891/mystery-white-space-underneath-image-tag/31445364
+img {
+  display: block;
+}

@@ -1,3 +1,45 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header {
+  padding: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo-img {
+    @include color-svg($primary-dark-filter);
+    height: 3.2rem;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 42px;
+
+    @include breakpoint(small, max-width) {
+      display: none;
+    }
+  }
+
+  &__nav-item {
+    @include font-size(12, 14, 2);
+    font-weight: bold;
+    text-transform: uppercase;
+    &--active {
+      color: $primary-cyan;
+    }
+  }
+
+  &__hamburger {
+    @include breakpoint(small) {
+      display: none;
+    }
+  }
+  &__hamburger-img {
+    @include color-svg($primary-dark-filter);
+    height: 1.3rem;
+  }
+}

@@ -12,33 +12,24 @@ $text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
 $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
   "Monaco", monospace !default;
 
-/// Copy text color
-/// @type Color
 $primary-cyan: rgb(95, 180, 162) !default;
-
-/// Main brand color
-/// @type Color
 $primary-blue: rgb(32, 58, 76) !default;
+$primary-dark: rgb(51, 50, 61) !default;
 
-/// Light grey
-/// @type Color
-$light-grey: rgb(250, 250, 250) !default;
+$very-light-grey: rgb(250, 250, 250) !default;
+$light-grey: rgb(234, 234, 235) !default;
+$bright-red: rgb(244, 48, 48) !default;
 
-/// Medium grey
-/// @type Color
-$bright-red: rgb(234, 234, 235) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(244, 48, 48) !default;
+$primary-dark-filter: invert(17%) sepia(20%) saturate(447%) hue-rotate(206deg)
+  brightness(97%) contrast(90%);
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  "small": 375px,
-  "medium": 768px,
-  "large": 1024px,
+  "small": 600px,
+  "medium": 900px,
+  "large": 1200px,
 ) !default;
 
 /// Relative or absolute URL where all assets are served from

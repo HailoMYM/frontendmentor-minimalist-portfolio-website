@@ -337,3 +337,38 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 3rem; }
+
+img {
+  display: block; }
+
+.header {
+  padding: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo-img {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(20%) saturate(447%) hue-rotate(206deg) brightness(97%) contrast(90%);
+    height: 3.2rem; }
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 42px; }
+    @media screen and (max-width: 600px) {
+      .header__nav {
+        display: none; } }
+  .header__nav-item {
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.16667em;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .header__nav-item--active {
+      color: #5fb4a2; }
+  @media screen and (min-width: 600px) {
+    .header__hamburger {
+      display: none; } }
+  .header__hamburger-img {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(20%) saturate(447%) hue-rotate(206deg) brightness(97%) contrast(90%);
+    height: 1.3rem; }

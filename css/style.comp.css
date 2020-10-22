@@ -327,3 +327,24 @@ html {
 * {
   margin: 0;
   padding: 0; }
+
+h1,
+h2,
+h3 {
+  font-family: "Ibarra Real Nova", sans-serif; }
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem; }
+
+.header {
+  width: 100%;
+  display: flex; }
+  .header__nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .header__nav-item {
+    width: 200px;
+    color: red; }
